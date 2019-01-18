@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/pop_lay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="@dimen/size5"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text size for stories"
+        android:textSize="@dimen/size20"
+        android:layout_marginTop="@dimen/size5"
+        android:textStyle="bold"
+        android:textColor="@color/Blue"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/size10"
+          android:backgroundTint="@color/Blue"
+        android:buttonTint="@color/Blue"
+        android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/btn_small"
+                android:layout_width="match_parent"
+                android:textColor="@color/Blue"
+                android:text="Small"
+                android:textStyle="bold"
+                android:buttonTint="@color/Blue"
+                android:textSize="@dimen/size12"
+                android:padding="10dp"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:text="Medium"
+                android:id="@+id/btn_medium"
+                android:layout_width="wrap_content"
+                android:textColor="@color/Blue"
+                android:textStyle="bold"
+                android:textSize="@dimen/size14"
+                android:buttonTint="@color/Blue"
+                android:padding="@dimen/size10"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/btn_large"
+                android:text="Large"
+                android:textStyle="bold"
+                android:padding="@dimen/size10"
+                android:buttonTint="@color/Blue"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/size16"
+                android:textColor="@color/Blue"
+                android:layout_height="wrap_content" />
+    </RadioGroup>
+</LinearLayout>

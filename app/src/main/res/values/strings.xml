@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Online India</string>
+    <string name="app_name1">Online India</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings">settings </string>
+    <string name="notification">Notifications</string>
+    <string name="themecolor">Theme Colour</string>
+    <string name="feedback">Feedback</string>
+    <string name="shareapp">Share App</string>
+    <string name="rateus">Rate us</string>
+    <string name="Light_Light_Blue">Light_Light_Blue</string>
+    <string name="White">White</string>
+    <string name="comment">Comments</string>
+    <string name="Font">Font Size</string>
+    <string name="download">Download</string>
+    <string name="rajya">राज्य</string>
+    <string name="titel">titel</string>
+    <string name="edittext_hint"><font size="12">Name</font></string>
+    <string name="ext_msg">Please click BACK again to exit</string>
+    <string name="facebook_app_id">570960423257240</string>
+    <string name="fb_login_protocol_scheme">fb570960423257240</string>
+
+    <string name="FCM_PREF">onlineind.com</string>
+    <string name="FCM_TOKEN">onlineind.com</string>
+
+</resources>

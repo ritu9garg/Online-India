@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/discription_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Blue"
+        android:theme="@style/AppTheme3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:id="@+id/img_discription_back"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="0.7">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="@dimen/size10"
+                    android:src="@drawable/back_arrow" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/size20"
+                    android:textColor="@color/White"
+                    android:textSize="@dimen/size16"
+                    android:gravity="center|start"
+                    android:text="Likes"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+          <!--  <TextView
+                android:id="@+id/set_titel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="2.18"
+                android:singleLine="true"
+                android:text="Likes"
+                android:textColor="@color/White"
+                android:textSize="16dp"
+                android:textStyle="bold" />-->
+
+
+    <android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    app:stackFromEnd="true"
+    app:reverseLayout="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        app:stackFromEnd="true"
+        app:reverseLayout="true"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="180dp">
+
+            <ImageView
+                android:id="@+id/news_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:layout_marginTop="@dimen/size5"
+                android:layout_margin="@dimen/size10"
+                android:background="@drawable/border"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:focusableInTouchMode="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@mipmap/ic_launcher">
+            </ImageView>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/news_titel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:textStyle="bold"
+            android:paddingStart="@dimen/size10"
+            android:text="गौहत्या मामला: शंकराचार्य ने दिया श्राप, जाने अब क्या होगा आगे!"
+            android:textAlignment="viewStart"
+            android:textColor="@color/Blue"
+            android:textSize="18dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:focusable="true"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/clock" />
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/news_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:text="August 25, 2017"
+                android:textColor="#c3000000"
+                android:textSize="14dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/news_discription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_gravity="center_vertical|right"
+                android:padding="5dp"
+                android:text="OnlineCG बिलासपुर। छत्तीसगढ़ के दुर्ग और बेमेतरा जिला स्थित गौशाला में में भूख से सैकड़ों गायों की मौत पर अभी तक राजनीति थमी नहीं है। इस मामले में आए दिन कोई न कोई प्रदेश सरकार को घेर ही लेता है। इसी बीच अब धर्माचार्यों ने भी इस घटना की कड़ी आलोचना करना शुरू कर दिया है। वहीं खबर आ रही है कि इस मामले में अब पुरी के शंकराचार्य निश्चलानंद सरस्वती ने भी छत्तीसगढ़ सरकार को आड़े हाथों लिया है। उन्होंने कहा कि भाजपा सरकार गौ हत्यारों को संरक्षण देना बंद करें और रमन सरकार को गौ हत्या के दोषियों पर कड़ी कार्रवाई करना चाहिए।"
+                android:textColor="@color/Black"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+</LinearLayout>

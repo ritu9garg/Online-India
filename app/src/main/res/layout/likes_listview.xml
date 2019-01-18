@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Blue"
+            android:theme="@style/AppTheme2"
+            android:id="@+id/likes_toolbar">
+            <LinearLayout
+                android:id="@+id/img_likes_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back_arrow"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginLeft="70dp"
+                android:text="Likes"/>
+        </android.support.v7.widget.Toolbar>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list_View"
+            android:layout_below="@+id/likes_toolbar">
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/empty"
+            android:layout_below="@+id/my_list_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/size5"
+                android:text="Oops! You have not like a NEWS story yet, Do read NEWS from the app and Tap on Like icon to show story here."
+                android:padding="25dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#8e878686"
+            android:visibility="gone"
+            android:id="@+id/likeloader"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/likes_toolbar">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="30dp"
+                android:visibility="visible"
+                android:src="@drawable/black"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

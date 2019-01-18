@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@color/Light_Light_Blue"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/headerLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center|start"
+            android:layout_height="50dp">
+        <ImageView
+            android:layout_width="25sp"
+            android:layout_marginLeft="@dimen/size30"
+            android:layout_height="20sp"
+            android:background="@drawable/test"/>
+       <!-- <ImageView
+            android:layout_width="wrap_content"
+         android:layout_margin="@dimen/size30"
+            android:layout_height="40sp"
+            android:background="@drawable/aaaaaaaa"/>-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Online India"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/Blue"
+               android:layout_marginLeft="30dp"/>
+
+                </LinearLayout>
+</LinearLayout>

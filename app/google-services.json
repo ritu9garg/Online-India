@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "993044813568",
+    "firebase_url": "https://online-india-e6b6f.firebaseio.com",
+    "project_id": "online-india-e6b6f",
+    "storage_bucket": "online-india-e6b6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993044813568:android:c667f56454ed85e8",
+        "android_client_info": {
+          "package_name": "onlineind.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993044813568-m4uki8j5f1o11g7rh1pe4h6rohu0i9u6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "onlineind.com",
+            "certificate_hash": "397896ecd5765f708118b67d69ce05b9cb1a1191"
+          }
+        },
+        {
+          "client_id": "993044813568-dtfjo1rpf8t72bocng7sh3dbie9sddpu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBa6HLnBTB5UCB8K_M7oHNwFwxMtrfQcUw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993044813568-dtfjo1rpf8t72bocng7sh3dbie9sddpu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

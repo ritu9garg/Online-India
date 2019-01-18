@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Blue"
+            android:theme="@style/AppTheme2"
+            android:id="@+id/downloads_toolbar">
+            <LinearLayout
+                android:id="@+id/img_download_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+            <ImageView
+               android:layout_marginTop="@dimen/size10"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back_arrow"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginLeft="100dp"
+                android:text="Downloads"/>
+        </android.support.v7.widget.Toolbar>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list_View">
+
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

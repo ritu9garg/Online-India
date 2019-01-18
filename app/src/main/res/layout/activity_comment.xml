@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/White"
+    android:weightSum="4"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+
+        <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Blue"
+        android:theme="@style/AppTheme2"
+        android:id="@+id/tool">
+        <LinearLayout
+            android:id="@+id/comment_back_img"
+            android:layout_width="wrap_content"
+            android:gravity="center|start"
+            android:layout_marginRight="@dimen/size15"
+            android:layout_height="60dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_arrow"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:textSize="20dp"
+            android:textStyle="bold"
+           android:gravity="center"
+            android:text="Comments"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/set_news"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:orientation="horizontal"
+            android:layout_height="110dp">
+            <ImageView
+                android:id="@+id/cmnt_image1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:src="@mipmap/ic_launcher" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/cmnt_titel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="100"
+               android:textStyle="bold"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="5dp"
+                android:text="देश में गाय पर सियासत, लेकिन बदहाल हैं दिल्ली की गौशालाएं"
+                android:textColor="@color/Blue"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/cmnt_content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1.19"
+                android:layout_marginTop="@dimen/size5"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="OnlineCG रायपुर। प्रदेश के सबसे नामी पं. रविशंकर शुक्ल विवि के एमए संस्कृत द्वितीय वर्ष की वार्षिक परीक्षा का परिणाम बेहद चौंकाने वाला है। मार्च-अप्रैल 2017 को हुई इस परीक्षा का परिणाम गुरुवार को जारी कर दिया गया।"
+                android:textColor="@color/Black"
+                android:textSize="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/titel1" />
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:id="@+id/hide_cmnt_box"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edt_post_comment"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginRight="@dimen/size10"
+        android:visibility="visible"
+        android:layout_marginTop="@dimen/size15"
+        android:imeOptions="actionNext"
+        android:background="@drawable/border"
+        android:gravity="top"
+        android:hint="Post your opinion here"
+        android:inputType="textLongMessage"
+        android:padding="@dimen/size10"
+        android:textSize="@dimen/size14" />
+    <LinearLayout
+    android:id="@+id/layout_visibility"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="match_parent"
+        android:hint=" Enter Your Name"
+        android:id="@+id/edt_name"
+        android:digits=" ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+        android:layout_marginTop="@dimen/size5"
+        android:background="@drawable/border"
+        android:inputType="textPersonName"
+        android:textColorHint="#8f8f8f"
+        android:textSize="14dp"
+
+        android:imeOptions="actionNext"
+        android:padding="@dimen/size5"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginRight="@dimen/size10"
+        android:layout_height="40dp" />
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_marginTop="@dimen/size5"
+        android:layout_width="match_parent"
+        android:hint=" Enter Your Email"
+        android:background="@drawable/border"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#8f8f8f"
+        android:imeOptions="actionNext"
+        android:padding="@dimen/size5"
+        android:textSize="14dp"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginRight="@dimen/size10"
+        android:layout_height="40dp" />
+    <EditText
+        android:id="@+id/edt_city"
+        android:layout_width="match_parent"
+        android:hint=" Enter Your City"
+        android:layout_marginTop="@dimen/size5"
+        android:imeOptions="actionNext"
+        android:digits=" ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+        android:padding="@dimen/size5"
+        android:inputType="text"
+        android:background="@drawable/border"
+        android:textColorHint="#8f8f8f"
+        android:textSize="14dp"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginRight="@dimen/size10"
+        android:layout_height="40dp" />
+    <Button
+        android:id="@+id/btn_post_cmnt"
+        android:layout_width="match_parent"
+        android:background="@drawable/mybutton"
+        android:text="Post your Comment"
+        android:textSize="12dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="@dimen/size15"
+        android:textColor="@color/White"
+        android:layout_marginRight="70dp"
+        android:layout_height="wrap_content" />
+      </LinearLayout>
+
+    <LinearLayout
+    android:id="@+id/btn_layout_visibility"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_height="wrap_content"
+        android:weightSum="1">
+    <Button
+        android:id="@+id/sign_in_post"
+        android:layout_width="wrap_content"
+        android:background="@drawable/mybutton"
+        android:text="Sign In to post"
+        android:textSize="12dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/White"
+        android:layout_marginRight="@dimen/size5"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.47" />
+
+    <Button
+        android:id="@+id/continue_guest"
+        android:layout_width="wrap_content"
+        android:textSize="12dp"
+        android:text="continue as guest"
+        android:textColor="#93000000"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/my_button2"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.24" />
+    </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+       </ScrollView>
+        </LinearLayout>
+<ListView
+        android:layout_width="match_parent"
+        android:id="@+id/list_comment"
+        android:layout_margin="@dimen/size10"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>
+
+
+
+

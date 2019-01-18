@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:clickable="true"
+    android:weightSum="2"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.25">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+      <android.support.v4.view.ViewPager
+          android:id="@+id/viewpager"
+          android:layout_width="match_parent"
+          android:layout_height="178dp"
+          android:scrollbars="none">
+      </android.support.v4.view.ViewPager>
+
+      <android.support.v4.widget.SwipeRefreshLayout
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/swipe_refresh_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+      <android.support.v7.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/recycler"
+          android:background="@color/White"
+          android:layout_below="@+id/slider">
+
+      </android.support.v7.widget.RecyclerView></android.support.v4.widget.SwipeRefreshLayout>
+  </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loader"
+        android:layout_width="match_parent"
+        android:background="#77bab2b2"
+        android:clickable="true"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="30dp"
+            android:src="@drawable/black"
+            android:layout_height="30dp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/loaderitem"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:background="#8e878686"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="30dp"
+            android:src="@drawable/black"
+            android:layout_height="30dp" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.BaseActivity">
+
+
+    <item
+        android:id="@+id/action_notification1"
+        android:icon="@drawable/m_a"
+        android:title="action_notification"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/notification"
+                android:title="Notification"
+                android:icon="@drawable/notification"
+                app:showAsAction="collapseActionView">
+
+            </item>
+            <item
+                android:id="@+id/theme"
+                android:title="Theme Color"
+                android:icon="@drawable/themecolor"
+                app:showAsAction="collapseActionView">
+
+            </item>
+            <item
+                android:id="@+id/shareApp"
+                android:title="Share App"
+                android:icon="@drawable/share_app"
+                app:showAsAction="collapseActionView">
+
+            </item>
+            <item
+                android:id="@+id/rateUs"
+                android:title="Rate us"
+                android:icon="@drawable/rate_us"
+                app:showAsAction="collapseActionView">
+
+            </item>
+            <item
+                android:id="@+id/feedback"
+                android:title="Feedback"
+                android:icon="@drawable/feedback"
+                app:showAsAction="collapseActionView">
+
+            </item>
+        </menu>
+    </item>
+
+
+</menu>

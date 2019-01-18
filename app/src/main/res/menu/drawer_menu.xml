@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/rajya"
+        android:title="राज्य"
+        android:icon="@drawable/stateeeeeee"/>
+    <item
+        android:id="@+id/desh_videsh"
+        android:title="देश-विदेश"
+        android:icon="@drawable/nationaleeeeeee"/>
+    <item
+        android:id="@+id/rajniti"
+        android:title="राजनीति"
+        android:icon="@drawable/politicaleeeeeee"/>
+    <item
+        android:id="@+id/khel"
+        android:title="खेल"
+        android:icon="@drawable/sportseeeeeee"/>
+    <item
+        android:id="@+id/taknik"
+        android:title="तकनीक "
+        android:icon="@drawable/technologyeeeee"/>
+
+    <item
+        android:id="@+id/vyapar"
+        android:title="व्यापार"
+        android:icon="@drawable/businesseeeeee"/>
+    <item
+        android:id="@+id/manoranjan"
+        android:title="मनोरंजन"
+        android:icon="@drawable/entertainmenteee"/>
+    <item
+        android:id="@+id/health"
+        android:title="हेल्थ "
+        android:icon="@drawable/healtheeeeeee"/>
+    <item
+        android:id="@+id/lifestyle"
+        android:title="लाइफ स्टाइल"
+        android:icon="@drawable/lifestyleeeeeeee"/>
+    <item
+        android:id="@+id/astha"
+        android:title="आस्था"
+        android:icon="@drawable/asthaeeeeee"/>
+    <item
+        android:id="@+id/trending"
+        android:title="ट्रेंडिंग "
+        android:icon="@drawable/trendingeeeeeee"/>
+
+
+</menu>
